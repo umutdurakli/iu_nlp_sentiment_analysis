@@ -1,0 +1,4 @@
+category,rows_read,valid_ratings,invalid_ratings,invalid_json,missing_or_empty_title,missing_or_empty_text,mean_text_words_nonempty,mean_text_characters_nonempty
+Sports_and_Outdoors,10000,10000,0,0,0,1,64.09,343.56
+Video_Games,10000,10000,0,0,0,0,73.36,401.05
+Electronics,10000,10000,0,0,0,3,73.4,397.27

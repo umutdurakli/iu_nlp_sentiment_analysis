@@ -1,0 +1,32 @@
+{
+  "experiment": "classifier_comparison",
+  "tfidf_ngrams": [
+    1,
+    2
+  ],
+  "class_weight_strength": 0.5,
+  "results": [
+    {
+      "modell": "Logistische Regression C=1",
+      "accuracy": 0.7340489365957731,
+      "macro_f1": 0.4964781306823691
+    },
+    {
+      "modell": "LinearSVC C=0.1",
+      "accuracy": 0.7438495899726648,
+      "macro_f1": 0.46722320419946406
+    },
+    {
+      "modell": "LinearSVC C=1",
+      "accuracy": 0.7246483098873259,
+      "macro_f1": 0.4660038768151525
+    },
+    {
+      "modell": "LinearSVC C=3",
+      "accuracy": 0.705780385359024,
+      "macro_f1": 0.45235548377334656
+    }
+  ],
+  "best_model": "Logistische Regression C=1",
+  "best_macro_f1": 0.4964781306823691
+}

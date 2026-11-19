@@ -1,0 +1,16 @@
+category,rating,count,percent_of_valid_ratings
+Sports_and_Outdoors,1,5476,5.48
+Sports_and_Outdoors,2,3734,3.73
+Sports_and_Outdoors,3,7065,7.07
+Sports_and_Outdoors,4,15842,15.84
+Sports_and_Outdoors,5,67883,67.88
+Video_Games,1,8751,8.75
+Video_Games,2,4900,4.9
+Video_Games,3,8142,8.14
+Video_Games,4,14557,14.56
+Video_Games,5,63650,63.65
+Electronics,1,8006,8.01
+Electronics,2,4301,4.3
+Electronics,3,7131,7.13
+Electronics,4,15191,15.19
+Electronics,5,65371,65.37

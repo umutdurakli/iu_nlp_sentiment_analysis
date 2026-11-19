@@ -1,0 +1,116 @@
+{
+  "experiment": "E20",
+  "description": "Final polarity comparison on held-out test data",
+  "test_size": 14999,
+  "label_mapping": {
+    "negative": [
+      1,
+      2
+    ],
+    "neutral": [
+      3
+    ],
+    "positive": [
+      4,
+      5
+    ]
+  },
+  "tfidf_e18": {
+    "accuracy": 0.8956597106473765,
+    "macro_f1": 0.7316770348853684,
+    "classification_report": {
+      "Negativ": {
+        "precision": 0.7983777520278099,
+        "recall": 0.8331318016928658,
+        "f1-score": 0.8153846153846154,
+        "support": 2481.0
+      },
+      "Neutral": {
+        "precision": 0.44957081545064376,
+        "recall": 0.4048309178743961,
+        "f1-score": 0.42602948652770717,
+        "support": 1035.0
+      },
+      "Positiv": {
+        "precision": 0.9538247081373061,
+        "recall": 0.953409387790647,
+        "f1-score": 0.9536170027437829,
+        "support": 11483.0
+      },
+      "accuracy": 0.8956597106473765,
+      "macro avg": {
+        "precision": 0.7339244252052533,
+        "recall": 0.730457369119303,
+        "f1-score": 0.7316770348853684,
+        "support": 14999.0
+      },
+      "weighted avg": {
+        "precision": 0.8933162291028134,
+        "recall": 0.8956597106473765,
+        "f1-score": 0.8943458758472077,
+        "support": 14999.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        2067,
+        202,
+        212
+      ],
+      [
+        298,
+        419,
+        318
+      ],
+      [
+        224,
+        311,
+        10948
+      ]
+    ]
+  },
+  "distilbert_e19_mapped": {
+    "accuracy": 0.9164610974064937,
+    "macro_f1": 0.7498157190499027,
+    "classification_report": {
+      "Negativ": {
+        "precision": 0.7955974842767296,
+        "recall": 0.9177750906892382,
+        "f1-score": 0.8523301516002245,
+        "support": 2481
+      },
+      "Neutral": {
+        "precision": 0.547085201793722,
+        "recall": 0.3536231884057971,
+        "f1-score": 0.4295774647887324,
+        "support": 1035
+      },
+      "Positiv": {
+        "precision": 0.9681723055458668,
+        "recall": 0.9669076025428895,
+        "f1-score": 0.9675395407607512,
+        "support": 11483
+      }
+    },
+    "confusion_matrix": [
+      [
+        2277,
+        126,
+        78
+      ],
+      [
+        382,
+        366,
+        287
+      ],
+      [
+        203,
+        177,
+        11103
+      ]
+    ]
+  },
+  "accuracy_difference": 0.020801386759117246,
+  "macro_f1_difference": 0.018138684164534347,
+  "total_seconds": 0.8633949756622314
+}

@@ -1,0 +1,28 @@
+{
+  "experiment": "title_text_comparison",
+  "results": [
+    {
+      "variante": "A_nur_beschreibung",
+      "titel_wiederholungen": 0,
+      "merkmale": 100000,
+      "accuracy": 0.7340489365957731,
+      "macro_f1": 0.4964781306823691
+    },
+    {
+      "variante": "B_titel_und_beschreibung",
+      "titel_wiederholungen": 1,
+      "merkmale": 100000,
+      "accuracy": 0.7769184612307487,
+      "macro_f1": 0.5779234916047076
+    },
+    {
+      "variante": "C_titel_doppelt",
+      "titel_wiederholungen": 2,
+      "merkmale": 100000,
+      "accuracy": 0.7785852390159343,
+      "macro_f1": 0.5806184050818185
+    }
+  ],
+  "best_variant": "C_titel_doppelt",
+  "best_macro_f1": 0.5806184050818185
+}

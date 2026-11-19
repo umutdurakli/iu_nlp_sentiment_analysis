@@ -1,0 +1,33 @@
+{
+  "experiment": "ngram_comparison",
+  "C": 1.0,
+  "gewichtungsstaerke": 0.5,
+  "ergebnisse": [
+    {
+      "ngram_min": 1,
+      "ngram_max": 1,
+      "merkmale": 23328,
+      "accuracy": 0.7111140742716181,
+      "macro_f1": 0.4697397135461669
+    },
+    {
+      "ngram_min": 1,
+      "ngram_max": 2,
+      "merkmale": 100000,
+      "accuracy": 0.7340489365957731,
+      "macro_f1": 0.4964781306823691
+    },
+    {
+      "ngram_min": 1,
+      "ngram_max": 3,
+      "merkmale": 100000,
+      "accuracy": 0.7350490032668845,
+      "macro_f1": 0.49510019221719165
+    }
+  ],
+  "beste_variante": [
+    1,
+    2
+  ],
+  "bester_macro_f1": 0.4964781306823691
+}

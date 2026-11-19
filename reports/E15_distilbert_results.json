@@ -1,0 +1,104 @@
+{
+  "experiment": "E15",
+  "model": "distilbert/distilbert-base-uncased",
+  "device": "mps",
+  "seed": 42,
+  "train_samples": 30000,
+  "validation_samples": 14999,
+  "max_length": 192,
+  "batch_size": 8,
+  "epochs": 2,
+  "learning_rate": 2e-05,
+  "class_weight_alpha": 0.5,
+  "train_loss_by_epoch": [
+    0.8399780739277601,
+    0.6700835768106083
+  ],
+  "training_seconds": 2591.285460333005,
+  "evaluation_seconds": 203.49861291699926,
+  "accuracy": 0.7946529768651244,
+  "macro_f1": 0.6047249572672952,
+  "classification_report": {
+    "1 Stern": {
+      "precision": 0.7438063063063063,
+      "recall": 0.7698135198135199,
+      "f1-score": 0.7565864833906071,
+      "support": 1716.0
+    },
+    "2 Sterne": {
+      "precision": 0.3747044917257683,
+      "recall": 0.4143790849673203,
+      "f1-score": 0.393544382371198,
+      "support": 765.0
+    },
+    "3 Sterne": {
+      "precision": 0.48484848484848486,
+      "recall": 0.41739130434782606,
+      "f1-score": 0.4485981308411215,
+      "support": 1035.0
+    },
+    "4 Sterne": {
+      "precision": 0.5746219592373438,
+      "recall": 0.4498198661863098,
+      "f1-score": 0.5046189376443418,
+      "support": 1943.0
+    },
+    "5 Sterne": {
+      "precision": 0.9006522829904666,
+      "recall": 0.9407756813417191,
+      "f1-score": 0.9202768520892078,
+      "support": 9540.0
+    },
+    "accuracy": 0.7946529768651244,
+    "macro avg": {
+      "precision": 0.615726705021674,
+      "recall": 0.598435891331339,
+      "f1-score": 0.6047249572672952,
+      "support": 14999.0
+    },
+    "weighted avg": {
+      "precision": 0.7849557961288905,
+      "recall": 0.7946529768651244,
+      "f1-score": 0.7882911319559177,
+      "support": 14999.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1321,
+      244,
+      74,
+      22,
+      55
+    ],
+    [
+      262,
+      317,
+      128,
+      36,
+      22
+    ],
+    [
+      106,
+      197,
+      432,
+      193,
+      107
+    ],
+    [
+      28,
+      58,
+      177,
+      874,
+      806
+    ],
+    [
+      59,
+      30,
+      80,
+      396,
+      8975
+    ]
+  ],
+  "test_data_used": false
+}

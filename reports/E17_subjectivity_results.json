@@ -1,0 +1,139 @@
+{
+  "experiment": "E17",
+  "description": "TF-IDF with sentence-level subjectivity filtering",
+  "subjectivity_method": "TextBlob PatternAnalyzer",
+  "subjectivity_threshold": 0.2,
+  "title_preserved": true,
+  "fallback_to_original_body": true,
+  "train_size": 119994,
+  "validation_size": 14999,
+  "training_filter_statistics": {
+    "reviews": 119994,
+    "total_sentences": 389213,
+    "removed_sentences": 87531,
+    "removed_percentage": 22.48922826318751,
+    "fallback_reviews": 11808
+  },
+  "validation_filter_statistics": {
+    "reviews": 14999,
+    "total_sentences": 47510,
+    "removed_sentences": 10554,
+    "removed_percentage": 22.214270679856874,
+    "fallback_reviews": 1530
+  },
+  "accuracy": 0.7709847323154877,
+  "macro_f1": 0.5655874902222908,
+  "baseline_e09_b": {
+    "accuracy": 0.7769,
+    "macro_f1": 0.5779
+  },
+  "accuracy_difference": -0.0059152676845123375,
+  "macro_f1_difference": -0.012312509777709146,
+  "classification_report": {
+    "1": {
+      "precision": 0.7045454545454546,
+      "recall": 0.7587412587412588,
+      "f1-score": 0.7306397306397306,
+      "support": 1716.0
+    },
+    "2": {
+      "precision": 0.35555555555555557,
+      "recall": 0.2718954248366013,
+      "f1-score": 0.30814814814814817,
+      "support": 765.0
+    },
+    "3": {
+      "precision": 0.42515592515592515,
+      "recall": 0.39516908212560387,
+      "f1-score": 0.40961442163244866,
+      "support": 1035.0
+    },
+    "4": {
+      "precision": 0.5133372851215174,
+      "recall": 0.44570252187339165,
+      "f1-score": 0.47713498622589534,
+      "support": 1943.0
+    },
+    "5": {
+      "precision": 0.8852475547040436,
+      "recall": 0.9202306079664571,
+      "f1-score": 0.902400164465231,
+      "support": 9540.0
+    },
+    "accuracy": 0.7709847323154877,
+    "macro avg": {
+      "precision": 0.5767683550164993,
+      "recall": 0.5583477791086625,
+      "f1-score": 0.5655874902222908,
+      "support": 14999.0
+    },
+    "weighted avg": {
+      "precision": 0.75763133538263,
+      "recall": 0.7709847323154877,
+      "f1-score": 0.7633464154100883,
+      "support": 14999.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1302,
+      184,
+      96,
+      24,
+      110
+    ],
+    [
+      269,
+      208,
+      171,
+      46,
+      71
+    ],
+    [
+      143,
+      113,
+      409,
+      204,
+      166
+    ],
+    [
+      57,
+      39,
+      190,
+      866,
+      791
+    ],
+    [
+      77,
+      41,
+      96,
+      547,
+      8779
+    ]
+  ],
+  "training_seconds": 19.588584899902344,
+  "total_seconds": 45.01928400993347,
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 3,
+    "max_df": 0.95,
+    "max_features": 100000,
+    "sublinear_tf": true
+  },
+  "classifier": {
+    "type": "LogisticRegression",
+    "solver": "lbfgs",
+    "C": 1.0,
+    "max_iter": 1000,
+    "class_weight": {
+      "1": 1.3220853553448009,
+      "2": 1.9792755825143977,
+      "3": 1.7029847620275071,
+      "4": 1.242348761696097,
+      "5": 0.5607801782922053
+    }
+  }
+}
